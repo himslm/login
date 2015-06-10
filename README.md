@@ -1,7 +1,8 @@
 # login
 Simple Login Script for use with MySQL using MySQLi OOP
 
-MySQL Create table 'user': 
+Add the below table to whichever database you would like to create.
+
 ```MySQL
 CREATE TABLE users(  
   user_ID   MEDIUMINT UNSIGNED  NOT NULL  AUTO_INCREMENT,  
