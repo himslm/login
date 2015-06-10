@@ -12,4 +12,5 @@ CREATE TABLE user(
   PRIMARY KEY(user_ID)  
 );
 ```
+Once your Database and table has been setup, make sure to edit classes/cxn.php with Database Login Credentials.
 
