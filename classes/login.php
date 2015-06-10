@@ -15,7 +15,7 @@ class login extends cxn{
     }
   }
   function checkUserExists($user){
-    $sql = $this->cxn->query("SELECT username FROM __table__ WHERE username = '" . $user . "'");
+    $sql = $this->cxn->query("SELECT username FROM users WHERE username = '" . $user . "'");
     if($sql->num_rows > 0){
       return true;
     }else{
@@ -24,7 +24,7 @@ class login extends cxn{
     }
   }
   function verifyPassword($user, $pass){
-    $sql = $this->cxn->query("SELECT * FROM __table__ WHERE username = '" . $user . "'");
+    $sql = $this->cxn->query("SELECT * FROM users WHERE username = '" . $user . "'");
     WHILE($row = $sql->fetch_assoc()){
       if(crypt($pass, $row['password']) == $row['password']){
         $_SESSION['admin_ID'] = $row['user_ID'];
