@@ -3,7 +3,7 @@ Simple Login Script for use with MySQL using MySQLi OOP
 
 MySQL Create table 'user': 
 ```MySQL
-CREATE TABLE user(  
+CREATE TABLE users(  
   user_ID   MEDIUMINT UNSIGNED  NOT NULL  AUTO_INCREMENT,  
   username  VARCHAR(30)         NOT NULL,  
   fname     VARCHAR(50),  
@@ -12,5 +12,5 @@ CREATE TABLE user(
   PRIMARY KEY(user_ID)  
 );
 ```
-Once your Database and table has been setup, make sure to edit classes/cxn.php with Database Login Credentials.
+Once your Database and table has been setup, make sure to edit classes/cxn.php with Database Login Credentials.  
 
